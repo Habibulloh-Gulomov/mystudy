@@ -12,7 +12,9 @@ namespace mystudy.Data
             }
             public DbSet<Student> Students { get; set; }
             public DbSet<Mentor> Mentors { get; set; }
+            public DbSet<Course> Courses { get; set; }
+            public DbSet<Group> Groups { get; set; }
 
-    }
+        }
     
 }
