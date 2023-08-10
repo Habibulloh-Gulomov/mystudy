@@ -5,9 +5,15 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mystudy.Api", "mystudy\mystudy.Api.csproj", "{DB9167B7-44A7-4312-9073-A8938C6B525D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "Data Layer\DataAccess.csproj", "{FF7C94CB-AF19-48FB-B8FD-C4A61CB6CF25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "Data Layer\DataAccess.csproj", "{FF7C94CB-AF19-48FB-B8FD-C4A61CB6CF25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "mystudy.Service\Service.csproj", "{E039389E-9ED0-49A8-8246-F5CBCA1F7CF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "mystudy.Service\Service.csproj", "{E039389E-9ED0-49A8-8246-F5CBCA1F7CF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{DC98FC3E-3B2F-44F5-AEC0-1C61C0F6C499}"
+	ProjectSection(SolutionItems) = preProject
+		RP.cs = RP.cs
+		UoW.cs = UoW.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
