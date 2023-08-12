@@ -1,18 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Data_Layer.Models
+namespace Service.DTO
 {
-    public class Student
+    internal class StudentResponseDTO
     {
-        public Guid StudentId { get; set; }
-
         [Required]
         public string StudentName { get; set; }
 
         [Required]
         public int StudentAge { get; set; }
 
-        public string StudentGender { get;set;}
+        public string StudentGender { get; set; }
 
         [Required]
         [MinLength(9)]
@@ -20,7 +23,5 @@ namespace Data_Layer.Models
         public int StudentPhone { get; set; }
 
         public string StudentEmail { get; set; }
-
-        public int StudentWallet { get; set; }
     }
 }
