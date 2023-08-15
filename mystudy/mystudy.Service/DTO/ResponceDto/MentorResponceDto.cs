@@ -21,8 +21,7 @@ namespace Service.DTO.ResponceDto
         public string MentorPhone { get; set; }
         [Required]
         public string MentorCourse { get; set; }
-        [Required]
-        
+        [Required]       
         public string MentorLevel { get; set; }    
         
     }
