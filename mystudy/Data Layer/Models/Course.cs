@@ -16,8 +16,10 @@ namespace Data_Layer.Models
 
         public int Price { get; set; }
 
+        public Guid MentorId { get; set; }
+
         public Mentor Mentor { get; set; }
 
-        public ICollection<Student> Students  { get; set; } = new List<Student>();
+        public ICollection<Student> Students { get; set; } 
     }
 }
