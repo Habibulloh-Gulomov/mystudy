@@ -1,26 +1,19 @@
-
+using System.ComponentModel.DataAnnotations;
 namespace Data_Layer.Models
 {
     public class Mentor
     {
-        public int MentorID { get; set; }
-        
-        public int MentorAge { get; set; }
+        [Key]
+        public Guid Id { get; set; }
 
-        public string MentorName { get; set; }
+        public int Age { get; set; }
 
-        public string MentorEmail { get; set; }
+        public string Name { get; set; }
 
-        public string MentorPhone { get; set; }
+        public string Email { get; set; }
 
-        public string MentorCourse { get; set; }
+        public string PhoneNumber { get; set; }
 
-        public string CourseName { get; set; }
-
-        public string MentorLevel { get; set; }
-
-        public string StudentName { get; set; }
-
-        public string StudentEmail { get; set; }
+        public ICollection<Course> Courses { get; set; }
     }
 }
