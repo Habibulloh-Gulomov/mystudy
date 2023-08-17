@@ -12,12 +12,8 @@ namespace Data_Layer.Models
 
         public string Email { get; set; }
 
-        public string Phone { get; set; }
+        public string PhoneNumber { get; set; }
 
-        public Course Course { get; set; }
-
-        public ICollection<Student> students { get; set; } = new List<Student>();
-
-        public ICollection<Course> Courses { get; set; } = new List<Course>();
+        public ICollection<Course> Courses { get; set; }
     }
 }
