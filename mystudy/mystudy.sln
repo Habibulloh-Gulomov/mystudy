@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "mystudy.Service\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{DC98FC3E-3B2F-44F5-AEC0-1C61C0F6C499}"
 	ProjectSection(SolutionItems) = preProject
+		IRP.cs = IRP.cs
+		IUoW.cs = IUoW.cs
 		RP.cs = RP.cs
 		UoW.cs = UoW.cs
 	EndProjectSection

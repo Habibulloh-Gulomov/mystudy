@@ -1,18 +1,10 @@
-﻿public interface IUnitOfWork
-{
-    IRepository<Student> Students { get; }
-    IRepository<Mentor> Mentors { get; }
-    IRepository<Course> Courses { get; }
-    void Commit();
-    void SaveChanges();
-}
-
-public class UnitOfWork : IUnitOfWork
+﻿public class UnitOfWork : IUnitOfWork
 {
     private readonly DbContext _context;
     private IRepository<Student> _studentRepository;
     private IRepository<Mentor> _mentorRepository;
     private IRepository<Course> _courseRepository;
+    private IRepository<Group> _groupRepository;
 
     public UnitOfWork(DbContext context)
     {
@@ -40,6 +32,14 @@ public class UnitOfWork : IUnitOfWork
         get
         {
             return _courseRepository ??= new Repository<Course>(_context);
+        }
+    }
+
+    public IRepository<Group> Groups
+    {
+        get
+        {
+            return _groupRepository ??= new IRepository<Group>(_context);
         }
     }
 

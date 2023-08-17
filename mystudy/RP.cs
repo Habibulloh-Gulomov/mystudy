@@ -1,13 +1,4 @@
-﻿public interface IRepository<T> where T : class
-{
-    IEnumerable<T> GetAll();
-    T GetById(int id);
-    void Add(T entity);
-    void Update(T entity);
-    void Delete(T entity);
-}
-
-public class Repository<T> : IRepository<T> where T : class
+﻿public class Repository<T> : IRepository<T> where T : class
 {
     private readonly DbContext _context;
     private readonly DbSet<T> _dbSet;
