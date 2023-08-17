@@ -8,9 +8,16 @@ namespace Data_Layer.Models
 {
     public class Course
     {
-        public Guid CourseId { get; set; }
-        public string CourseName { get; set; }
-        public string CourseLength { get; set; }
-        public int CoursePrice { get; set; }
+        public Guid Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string Length { get; set; }
+
+        public int Price { get; set; }
+
+        public Mentor Mentor { get; set; }
+
+        public ICollection<Student> Students  { get; set; } = new List<Student>();
     }
 }
