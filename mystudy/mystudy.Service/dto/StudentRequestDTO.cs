@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Service.DTO
 {
-    internal class StudentRequestDTO
+    public class StudentRequestDTO
     {
+        [Required]
+        public string Name { get; set; }
 
-        public string StudentName { get; set; }
+        [Required]
+        public string Email { get; set;}
 
-        public string StudentEmail { get; set;}
+        [Required]
+        [MinLength(9)]
+        [MaxLength(9)]
+        public string Phone { get; set;}
 
-        public string StudentPhone { get; set;}
-
-        public int StudentWallet { get; set;}
+        [Required]
+        public bool isPaid { get; set;}
 
     }
 }

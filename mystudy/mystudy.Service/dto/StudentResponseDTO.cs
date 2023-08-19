@@ -7,21 +7,16 @@ using System.Threading.Tasks;
 
 namespace Service.DTO
 {
-    internal class StudentResponseDTO
+    public class StudentResponseDTO
     {
-        [Required]
-        public string StudentName { get; set; }
+        public string Name { get; set; }
 
-        [Required]
-        public int StudentAge { get; set; }
+        public int Age { get; set; }
 
-        public string StudentGender { get; set; }
+        public enum Gender { man, women }
 
-        [Required]
-        [MinLength(9)]
-        [MaxLength(9)]
-        public int StudentPhone { get; set; }
+        public int Phone { get; set; }
 
-        public string StudentEmail { get; set; }
+        public string Email { get; set; }
     }
 }
