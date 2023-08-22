@@ -20,6 +20,6 @@ namespace Data_Layer.Models
 
         public Mentor Mentor { get; set; }
 
-        public ICollection<Student> Students { get; set; } 
+        public ICollection<Student> Students { get; set; }
     }
 }
